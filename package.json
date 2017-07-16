@@ -4,8 +4,8 @@
   "description": "For fun",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev & node ./server/index.js ",
-    "dev": "webpack --watch",
+    "start": "webpack & node ./server/index.js ",
+    "dev": "webpack",
     "postinstall": "webpack & node ./server/index.js"
   },
   "author": "",
