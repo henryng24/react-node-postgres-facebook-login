@@ -68,7 +68,8 @@ app.get('/auth/facebook/callback',
 app.get('/tasks', getAllTasks)
 app.post('/createOrUpdateTask', createOrUpdateTask)
 
-app.listen(3000, function () {
+const port = process.env.PORT || 3000;
+app.listen(port, function () {
   console.log('Fun listening on port 3000!');
 });
 
