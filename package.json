@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev & node ./server/index.js ",
-    "dev": "webpack --watch",
-    "postinstall": "node ./server/index.js"
+    "dev": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
