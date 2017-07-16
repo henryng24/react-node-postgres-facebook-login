@@ -15,6 +15,7 @@ if (process.env.DATABASE_URL) {
       ssl: true
     }
   });
+  module.exports = sequelize;
 } else {
   // const username = String(fs.readFileSync(__dirname + '/databaseusername'));
   // const password = String(fs.readFileSync(__dirname + '/databasepassword'));
@@ -30,6 +31,5 @@ if (process.env.DATABASE_URL) {
       ssl: false
     }
   });
+  module.exports = sequelize;
 }
-
-module.exports = sequelize;

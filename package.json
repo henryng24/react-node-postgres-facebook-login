@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev & node ./server/index.js ",
     "dev": "webpack --watch",
-    "postinstall": "npm start"
+    "postinstall": "wepback & node./server/index.js"
   },
   "author": "",
   "license": "ISC",
