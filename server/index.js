@@ -14,10 +14,12 @@ const session = require('express-session');
 const sessionStore = new session.MemoryStore();
 const passport = require('passport')
 const Strategy = require('passport-facebook').Strategy
+///add comment for build
 console.log(process.env.clientID)
 console.log(process.env.clientSecret)
 console.log(process.env.sessionSecret)
 console.log(process.env.callbackURL)
+///adding comment
 
 passport.use(new Strategy({
     clientID: process.env.clientID,
