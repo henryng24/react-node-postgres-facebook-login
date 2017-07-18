@@ -4,12 +4,6 @@ import { BaseField } from './base-components/base-field.jsx';
 export class TaskForm extends Component {
   constructor(props) {
     super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-    this.props.submitHandler(this.state);
   }
 
   returnAllFields() {
@@ -25,7 +19,7 @@ export class TaskForm extends Component {
           canUpdate: canUpdate,
           required: true,
           onChange: this.handleChange,
-          submitHandler: this.props.submitHandler.bind(this),
+          submitHandler: this.props.submitHandler,
           id: task.id
         };
         return <BaseField {...inputProps} />
@@ -37,7 +31,7 @@ export class TaskForm extends Component {
         description: undefined,
         time: undefined,
         onChange: this.handleChange,
-        submitHandler: this.props.submitHandler.bind(this)
+        submitHandler: this.props.submitHandler
       };
       taskInformation.push(<BaseField {...inputProps} />)
       return taskInformation;

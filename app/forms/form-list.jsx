@@ -37,6 +37,7 @@ export class FormList extends Component {
   }
 
   submitHandler(formState) {
+    console.log(formState)
     fetch('/createOrUpdateTask', this.createPostObject(formState))
       .then(this.getAllTasks.bind(this))
       .catch(function(err) {
